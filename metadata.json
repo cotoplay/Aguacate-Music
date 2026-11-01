@@ -1,0 +1,6 @@
+{
+  "name": "MediaRip - Descargador de Música YouTube & Videos Facebook",
+  "description": "Descarga música y audio de YouTube en alta fidelidad (MP3 320kbps, M4A, FLAC) y videos de Facebook (HD y SD) de forma rápida y sencilla.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
