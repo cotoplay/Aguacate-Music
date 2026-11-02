@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09140f" />
+      <stop offset="100%" stop-color="#060c08" />
+    </linearGradient>
+
+    <!-- Avocado Skin Gradient -->
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b4d2e" />
+      <stop offset="100%" stop-color="#0d2818" />
+    </linearGradient>
+
+    <!-- Avocado Flesh Gradient -->
+    <linearGradient id="fleshGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a7f3d0" />
+      <stop offset="40%" stop-color="#86efac" />
+      <stop offset="100%" stop-color="#4ade80" />
+    </linearGradient>
+
+    <!-- Avocado Pit / Seed (Vinyl Record) Gradient -->
+    <linearGradient id="pitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#451a03" />
+      <stop offset="70%" stop-color="#78350f" />
+      <stop offset="100%" stop-color="#92400e" />
+    </linearGradient>
+
+    <!-- Headphones Gradient -->
+    <linearGradient id="hpGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="50%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- App Rounded Base -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  <rect width="504" height="504" x="4" y="4" rx="108" fill="none" stroke="#22c55e" stroke-width="3" stroke-opacity="0.3" />
+
+  <!-- Headphones Band Arch -->
+  <path d="M120 280 C120 120, 392 120, 392 280" fill="none" stroke="url(#hpGrad)" stroke-width="24" stroke-linecap="round" />
+
+  <!-- Avocado Outer Silhouette -->
+  <path d="M256 160 C310 160, 345 220, 355 285 C368 365, 325 435, 256 435 C187 435, 144 365, 157 285 C167 220, 202 160, 256 160 Z" fill="url(#skinGrad)" stroke="#15803d" stroke-width="4" />
+
+  <!-- Avocado Flesh -->
+  <path d="M256 178 C300 178, 330 228, 338 285 C348 355, 312 418, 256 418 C200 418, 164 355, 174 285 C182 228, 212 178, 256 178 Z" fill="url(#fleshGrad)" />
+
+  <!-- Avocado Pit shaped as a Vinyl Record -->
+  <g transform="translate(256, 320)">
+    <!-- Main Pit Circle -->
+    <circle cx="0" cy="0" r="62" fill="url(#pitGrad)" stroke="#b45309" stroke-width="3" />
+    <!-- Vinyl Grooves -->
+    <circle cx="0" cy="0" r="48" fill="none" stroke="#fef3c7" stroke-width="1.5" stroke-opacity="0.25" stroke-dasharray="14 6" />
+    <circle cx="0" cy="0" r="34" fill="none" stroke="#fef3c7" stroke-width="1.5" stroke-opacity="0.25" stroke-dasharray="18 8" />
+    
+    <!-- Pit Center Core / Spindle -->
+    <circle cx="0" cy="0" r="14" fill="#fbbf24" />
+    
+    <!-- White Play Triangle -->
+    <polygon points="-4,-7 8,0 -4,7" fill="#78350f" />
+  </g>
+
+  <!-- Headphone Ear Cups -->
+  <rect x="96" y="240" width="32" height="74" rx="16" fill="url(#hpGrad)" filter="url(#glow)" />
+  <rect x="384" y="240" width="32" height="74" rx="16" fill="url(#hpGrad)" filter="url(#glow)" />
+
+  <!-- Soundwave accents -->
+  <line x1="70" y1="277" x2="82" y2="277" stroke="#22c55e" stroke-width="6" stroke-linecap="round" />
+  <line x1="430" y1="277" x2="442" y2="277" stroke="#22c55e" stroke-width="6" stroke-linecap="round" />
+</svg>
